@@ -7,23 +7,24 @@ import java.io.Serializable;
  * Created by nico on 16/2/25.
  */
 @Entity
+@Table(name = "tab_book")
 public class Book implements Serializable
 {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)//主键生成方式auto(由jpa自动生成)
-    private Integer id;
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)//主键生成方式auto(由jpa自动生成)
+    private String id;
 
     private String title;
 
     public Book()
     {}
 
-    public Integer getId()
+    public String getId()
     {
         return id;
     }
 
-    public void setId(Integer id)
+    public void setId(String id)
     {
         this.id = id;
     }

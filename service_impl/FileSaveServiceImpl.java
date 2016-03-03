@@ -60,6 +60,7 @@ public class FileSaveServiceImpl implements FileSaveService
     {
 
         Book book = new Book();
+        book.setId("20160302");
         book.setTitle("中文");
         bookRepository.save(book);
 

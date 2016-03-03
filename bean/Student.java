@@ -1,15 +1,13 @@
 package com.hwz.bean;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * Created by nico on 16/2/26.
  */
 @Entity
+@Table(name = "tab_student")
 public class Student implements Serializable
 {
     @Id
