@@ -11,7 +11,7 @@ import java.io.Serializable;
 public class Book implements Serializable
 {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)//主键生成方式auto(由jpa自动生成)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//主键生成方式auto(由jpa自动生成)
     private String id;
 
     private String title;
